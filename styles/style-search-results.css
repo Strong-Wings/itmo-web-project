@@ -1,0 +1,19 @@
+img {
+  border-radius: 30px;
+  background-position: center;
+  padding: 20px;
+  width: 200pt;
+  filter: drop-shadow(3px 1px 4px #000000);
+  object-fit: fill;
+  transition: transform .5s;
+}
+img:hover {
+  transform: scale(1.5);
+  transform-origin: top left;
+}
+.good-name {
+  font-family: "Courier New";
+  font-size: 25 pt;
+  margin: 0;
+  letter-spacing: 0.03em;
+}
