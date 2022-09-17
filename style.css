@@ -1,0 +1,27 @@
+.row {
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+}
+.top-inline {
+    width: 33%;
+    vertical-align: text-bottom;
+    align-self: center;
+}
+.main-table {
+    width: 100%;
+    text-align: center;
+}
+.table-filer {
+    background-color: aqua;
+    height: 100pt;
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(74, 189, 221);
+    color: white;
+}
+body {
+    background-color: rgb(211, 255, 255);
+}
