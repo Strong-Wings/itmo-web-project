@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <script src="../scripts/page-load.js"></script>
+    <script src="../scripts/active-page.js"></script>
+    <script src="../scripts/cars-list.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style-search-results.css">
+    <link rel="stylesheet" href="../styles/cars-list.css">
+    <title>Top market</title>
+  </head>
+  <body>
+    <header>
+      <div class='row'>
+        <nav>
+          <div class='top-inline button_navigation_cars' style="float: left;" data-link="cars">
+              <a href="./cars.html">Cписок машин</a>
+          </div>
+          <div class='top-inline button_navigation_main' style="display: inline-block;" data-link="main">
+            <a href="../index.html">Главная</a>
+          </div>
+          <div class='top-inline button_navigation_search' style="display: inline-block;" data-link="search">
+            <a href="./search-results.html">Поиск</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h1>Список доступных машин</h1>
+        <form class="cars__form" id="cars-form">
+          <label>
+            Марка машины:
+          </label>
+          <input type="text" name="name" placeholder="Введите марку машины" class="cars_input">
+          <br>
+          <label>
+            Выберите категорию машины:
+          </label>
+          <select class="cars_input" name="category">
+            <option>Седан</option>
+            <option>Универсал</option>
+            <option>Джип</option>
+            <option>Автобус</option>
+          </select>
+          <br>
+          <button type="submit">
+            Добавить
+          </button>
+        </form>
+        <br>
+        <div class="cars_output" id="cars_output">
+        </div>
+      </section>
+    </main>
+    <footer>
+      Сделано <a href="https://t.me/strongwings7" target="_blank">Stepan Kryzhankov</a> с помощью <code>html</code> и <code>css</code>.
+      Страница загрузилась за <span id="page_load"></span> с.
+    </footer>
+  </body>
+</html>

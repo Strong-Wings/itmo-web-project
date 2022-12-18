@@ -55,6 +55,9 @@ a:active {
     color: hotpink;
     text-decoration: none;
 }
+.button_navigation_active {
+    background-color: lightblue;
+}
 code {
     font-family: monospace;
 }
@@ -67,6 +70,7 @@ footer {
     bottom: 0;
     left: 0;
     min-height: 20pt;
+    position: fixed;
 }
 body {
     background-color: rgb(211, 255, 255);

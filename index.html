@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/html">
   <head>
+    <script src="scripts/page-load.js"></script>
+    <script src="scripts/active-page.js"></script>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/style.css">
     <title>Top market</title>
@@ -9,25 +11,14 @@
     <header>
       <div class='row'>
         <nav>
-          <div class='top-inline' style="float: left;">
-            Строка поиска
+          <div class='top-inline button_navigation_cars' style="float: left;" data-link="cars">
+              <a href="pages/cars.html">Cписок машин</a>
           </div>
-          <div class='top-inline' style="display: inline-block;">
-            <a href="#">
-              <pre>
-╔════╗╔═══╗╔═══╗  ╔═╗╔═╗╔═══╗╔═══╗╔╗╔═╗╔═══╗╔════╗
-║╔╗╔╗║║╔═╗║║╔═╗║  ║║╚╝║║║╔═╗║║╔═╗║║║║╔╝║╔══╝║╔╗╔╗║
-╚╝║║╚╝║║─║║║╚═╝║  ║╔╗╔╗║║║─║║║╚═╝║║╚╝╝─║╚══╗╚╝║║╚╝
-──║║──║║─║║║╔══╝  ║║║║║║║╚═╝║║╔╗╔╝║╔╗║─║╔══╝──║║──
-──║║──║╚═╝║║║───  ║║║║║║║╔═╗║║║║╚╗║║║╚╗║╚══╗──║║──
-──╚╝──╚═══╝╚╝───  ╚╝╚╝╚╝╚╝─╚╝╚╝╚═╝╚╝╚═╝╚═══╝──╚╝──
-              </pre>
-            </a>
+          <div class='top-inline button_navigation_main' style="display: inline-block;" data-link="main">
+            <a href="index.html">Главная</a>
           </div>
-          <div class='top-inline' style="float: right;">
-            <a href="#">
-              Личный кабинет
-            </a>
+          <div class='top-inline button_navigation_search' style="display: inline-block;" data-link="search">
+            <a href="pages/search-results.html">Поиск</a>
           </div>
         </nav>
       </div>
@@ -47,7 +38,13 @@
         <tr>
           <td class="table-filter-td">
             <div class="table-filter">
-              Категория
+                <label for="category">Категория:</label>
+                <select name="category" id="category">
+                  <option value="sedan" selected>Седан</option>
+                  <option value="universal">Универсал</option>
+                  <option value="jeep">Джип</option>
+                  <option value="bus">Автобус</option>
+                </select>
             </div>
           </td>
           <td class="table-filter-td">
@@ -82,7 +79,7 @@
         </tr>
         <tr>
           <td colspan="2" class="table-filter-apply-button-td">
-            <a href="./search-results.html">
+            <a href="pages/search-results.html">
               <div class="table-filter-apply-button">
                 Применить
               </div>
@@ -92,7 +89,8 @@
       </table>
     </main>
     <footer>
-      Сделано <a href="https://t.me/strongwings7" target="_blank">Stepan Kryzhankov</a> с помощью <code>html</code> и <code>css</code>
+      Сделано <a href="https://t.me/strongwings7" target="_blank">Stepan Kryzhankov</a> с помощью <code>html</code> и <code>css</code>.
+      Страница загрузилась за <span id="page_load"></span> с.
     </footer>
   </body>
 </html>

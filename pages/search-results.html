@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <script src="../scripts/page-load.js"></script>
+    <script src="../scripts/active-page.js"></script>
+    <script type="module"  src="../scripts/cars-sellers.js"></script>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style-search-results.css">
+    <title>Top market</title>
+  </head>
+  <body>
+    <header>
+      <div class='row'>
+        <nav>
+          <div class='top-inline button_navigation_cars' style="float: left;" data-link="cars">
+              <a href="./cars.html">Cписок машин</a>
+          </div>
+          <div class='top-inline button_navigation_main' style="display: inline-block;" data-link="main">
+            <a href="../index.html">Главная</a>
+          </div>
+          <div class='top-inline button_navigation_search' style="display: inline-block;" data-link="search">
+            <a href="./search-results.html">Поиск</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section>
+        <table>
+          <tr>
+            <div>
+              <img src="../resources/lada-prima.jpeg">
+              <p class="good-name">Lada-prima</p>
+              <p>Продавец: <span class="seller-1 spinner"></span></p>
+            </div>
+            <div>
+              <img src="../resources/lada-vesta.jpeg">
+              <p class="good-name">Lada-vesta</p>
+              <p>Продавец: <span class="seller-2 spinner"></span></p>
+            </div>
+            <div>
+              <img src="../resources/lada-niva.jpeg">
+              <p class="good-name">Lada-niva</p>
+              <p>Продавец: <span class="seller-3 spinner"></span></p>
+            </div>
+          </tr>
+        </table>
+      </section>
+    </main>
+    <footer>
+      Сделано <a href="https://t.me/strongwings7" target="_blank">Stepan Kryzhankov</a> с помощью <code>html</code> и <code>css</code>.
+      Страница загрузилась за <span id="page_load"></span> с.
+    </footer>
+  </body>
+</html>
